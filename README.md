@@ -51,6 +51,19 @@ set(INC_LINKS "matrix.h" "svd.h")
 set(BIN_SRCS "test_matrix.cpp")
 ```
 
+Your new module folder structure will look like this
+
+    src
+    ├── ...
+    ├── matrices
+    │   ├── Makefile
+    │   ├── matrix.h
+    │   ├── matrix.cpp
+    │   ├── svd.h
+    │   ├── svd.cpp
+    │   └── test_matrix.cpp
+    └── ...
+
 Go ahead and create more modules without worrying about cross dependencies.\
 You can also use the cloned packages in your modules without having to specify extra links or directories.
 
