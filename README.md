@@ -30,7 +30,7 @@ cmake ..
 
 Clone external modules in the ```pkgs``` directory (example with opencv and gtsam)
 ```
-cd pkgs
+cd $(SANDBOX_ROOT)/pkgs
 git clone https://github.com/opencv/opencv.git
 git clone https://github.com/borglab/gtsam.git
 ```
