@@ -3,6 +3,8 @@
 This is a very simple build and sandboxing system that automatically takes care of inter-module dependencies and external packages (only external project that use cmake as build system are supported).\
 The system also uses python to compute dependencies and for various utilities.
 
+This systems allows you to quickly write code, create modules with libraries and executables and make use of external libraries without having to write any makefile or take care of dependencies yourself.
+
 ## Quick start
 
 Clone the build system
@@ -73,6 +75,8 @@ cd $(SANDBOX_ROOT)/build
 cmake ..
 make
 ```
+
+Note: the first run will also build all the packages and it might take a while.
 
 Executables for a given module can be found inside the ```bin``` folder.
 Symlinks for generated libraries and headers are also available in the ```lib``` and ```include``` folders respectively.
