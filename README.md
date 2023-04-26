@@ -78,5 +78,5 @@ make
 
 Note: the first run will also build all the packages and it might take a while.
 
-Executables for a given module can be found inside the ```bin``` folder.
+Executables for a given module can be found inside the ```bin/MODULE_NAME``` folder.
 Symlinks for generated libraries and headers are also available in the ```lib``` and ```include``` folders respectively.

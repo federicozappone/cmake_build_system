@@ -12,6 +12,9 @@ set(SANDBOX_BIN_DIR ${CMAKE_CURRENT_LIST_DIR}/../../bin)
 link_directories(${SANDBOX_LIB_DIR})
 include_directories(${SANDBOX_INCLUDE_DIR})
 
+set(CFLAGS "")
+set(LFLAGS "")
+
 
 if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/Makefile")
   include(${CMAKE_CURRENT_LIST_DIR}/Makefile)
@@ -30,6 +33,12 @@ if(DEFINED INC_LINKS AND NOT INC_LINKS STREQUAL "")
     )
   endforeach()
 endif()
+
+
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CFLAGS} ${LFLAGS}")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${LFLAGS}")
+
 
 
 set(DIRECTORY_TO_LIST "${SANDBOX_PKGS_DIR}")
