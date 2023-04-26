@@ -22,6 +22,12 @@ Set required enviromental variable
 export SANDBOX_ROOT=$(pwd)
 ```
 
+Do a dry run to initialize the folders structure
+```
+cd $(SANDBOX_ROOT)/build
+cmake ..
+```
+
 Clone external modules in the ```pkgs``` directory (example with opencv and gtsam)
 ```
 cd pkgs
