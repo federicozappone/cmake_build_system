@@ -85,16 +85,19 @@ Symlinks for generated libraries and headers are also available in the ```lib```
 
 ## Module Makefile Customization
 
-You can add extra "cmake-instructions" inside the module Makefile, for instance
+You can add extra compiler, linker flags or set cmake variables inside the module Makefile, for instance
 ```
 set(LIB_SRCS "matrix.cpp" "svd.cpp")
 set(INC_LINKS "matrix.h" "svd.h")
 set(BIN_SRCS "test_matrix.cpp")
 
+# set C++ standard
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -ggdb")
+# set extra compiler and linker flags
+set(CFLAGS "-O0 -ggdb")
+set(LFLAGS "-pthread")
 ```
 
 ## Packages Handling and Dependecies
