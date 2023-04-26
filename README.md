@@ -3,7 +3,7 @@
 This is a very simple build and sandboxing system that automatically takes care of inter-module dependencies and external packages (only external project that use cmake as build system are supported).\
 The system also uses python to compute dependencies and for various utilities.
 
-This systems allows you to quickly write code, create modules with libraries and executables and make use of external libraries without having to write any makefile or take care of dependencies yourself.
+This will allow you to quickly write code, create modules with libraries and executables and make use of external libraries without having to write any makefile or take care of dependencies yourself.
 
 ## Quick start
 
