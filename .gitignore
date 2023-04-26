@@ -1,0 +1,11 @@
+.cache/
+build/
+include/
+lib/
+share/
+pkgs/
+src/
+.editorconfig
+.clangd
+.clang-format
+compile_commands.json
