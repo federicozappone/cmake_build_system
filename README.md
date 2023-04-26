@@ -1,4 +1,4 @@
-# Simple CMake-base Build System
+# Simple CMake-based Build System
 
 This is a very simple build and sandboxing system that automatically takes care of inter-module dependencies and external packages (only external project that use cmake as build system are supported).\
 The system also uses python to compute dependencies and for various utilities.
