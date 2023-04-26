@@ -4,6 +4,7 @@ include/
 lib/
 share/
 pkgs/
+bin/
 src/
 .editorconfig
 .clangd
