@@ -64,7 +64,7 @@ Your new module folder structure will look like this
     │   └── test_matrix.cpp
     └── ...
 
-Go ahead and create more modules without worrying about cross dependencies.\
+Go ahead and create more modules without worrying about cross module or third-party packages dependencies.\
 You can also use the cloned packages in your modules without having to specify extra links or directories.
 
 Build the sandbox
