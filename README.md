@@ -5,6 +5,7 @@ The system also uses python to compute dependencies and for various utilities.
 
 This will allow you to quickly write code, create modules with libraries and executables and make use of external libraries without having to write any makefile or take care of dependencies yourself.
 
+
 ## Quick start
 
 Clone the build system
@@ -80,3 +81,23 @@ Note: the first run will also build all the packages and it might take a while.
 
 Executables for a given module can be found inside the ```bin``` folder.
 Symlinks for generated libraries and headers are also available in the ```lib``` and ```include``` folders respectively.
+
+
+## Module Makefile Customization
+
+You can add extra "cmake-instructions" inside the module Makefile, for instance
+```
+set(LIB_SRCS "matrix.cpp" "svd.cpp")
+set(INC_LINKS "matrix.h" "svd.h")
+set(BIN_SRCS "test_matrix.cpp")
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -ggdb")
+```
+
+## Packages Handling and Dependecies
+
+Imported external packages will be built and avaialble only locally inside the sandbox and will not be installed system-wide.
+The build system will not install extra system dependencies needed by the packages, hence, the user will have to pre-install any requirement for a given project.
