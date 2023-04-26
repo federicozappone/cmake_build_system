@@ -99,5 +99,5 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -ggdb")
 
 ## Packages Handling and Dependecies
 
-Imported external packages will be built and avaialble only locally inside the sandbox and will not be installed system-wide.
+Imported external packages will be built and avaialble only locally inside the sandbox and will not be installed system-wide.\
 The build system will not install extra system dependencies needed by the packages, hence, the user will have to pre-install any requirement for a given project.
